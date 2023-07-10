@@ -5,7 +5,7 @@ import InputField from "../Components/Form/InputField";
 import { ErrorMessage } from "../Components/Form/ErrorMessage";
 import { TransactionContext } from "../context/TransactionContext";
 import { useEffect } from "react";
-import { serverLink, isFaceRecognitionEnable } from "../Data/Variables";
+import { serverLink } from "../Data/Variables";
 import { ObjectGroupBy } from "../Data/Methods";
 import axios from "axios";
 
@@ -28,7 +28,7 @@ const Login = () => {
       setElection(election);
     }
     getData();
-  }, []);
+  }, [connectWallet, data]);
 
   const checkDuplicateVote = async (user_id) => {
     let transactions = await getAllTransactions();
@@ -90,7 +90,6 @@ const Login = () => {
                     fullWidth={true}
                     value={data.user_username}
                     id="outlined-disabled"
-                    disabled={isFaceRecognitionEnable}
                   />
                   <ErrorMessage />
                 </Grid>

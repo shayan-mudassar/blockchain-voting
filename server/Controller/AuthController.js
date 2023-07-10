@@ -319,27 +319,6 @@ const sendMail = async (mailContent, mailSubject, user) => {
   });
 };
 
-export const a = {
-  sc: async (req, res) => {
-    const filePath = path.resolve(process.cwd(), "Controller", "fr.py");
-    PythonShell.run(filePath, null, function (err, result) {
-      // console.log(result);
-      // console.log("Error : ");
-      // console.log(err);
-      // console.log("Python script finished");
-      if (err) {
-        return res.status(500).send("Error While Running Python");
-      }
-
-      if (result) {
-        return res.status(201).send(result);
-      } else {
-        return res.status(500).send("No face Match Found");
-      }
-    });
-  },
-};
-
 //Voting Mail
 
 export const votingMail = {
