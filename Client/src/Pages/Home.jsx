@@ -18,11 +18,11 @@ export default function Home() {
             minHeight: "calc(100vh - 128px)",
           }}
         >
-          <img
-            style={{ width: "50vw" }}
-            src="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/10/16044143/M187_Digital-voting-header.png"
-            alt="random"
-          />
+          <section>
+            <span>Welcome To</span>
+            <span>Blockchain</span>
+            <span>Voting</span>
+          </section>
         </Box>
       </main>
     </ThemeProvider>

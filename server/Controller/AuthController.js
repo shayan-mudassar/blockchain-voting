@@ -41,7 +41,7 @@ export const register = {
       try {
         const newUser = await User.create(req.body);
 
-        const mailContent = "Thank You For Joining the Voting System";
+        const mailContent = "Thank You For Joining the Blockchain Voting";
 
         const mailSubject = "Welcome Mail";
 

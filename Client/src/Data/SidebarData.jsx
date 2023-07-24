@@ -10,7 +10,7 @@ import logo from "../logo.svg";
 
 export const WebsiteDetails = {
   icon: logo,
-  title: "Voting System",
+  title: "Blockchain Voting",
 };
 
 export const SidebarData = [

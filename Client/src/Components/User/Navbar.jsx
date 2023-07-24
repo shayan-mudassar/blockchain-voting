@@ -25,7 +25,7 @@ export default function ButtonAppBar() {
           <Grid container spacing={0}>
             <Grid item xs={6} display="flex">
               <HowToVoteOutlinedIcon style={style.logo} />
-              <Typography variant="h5">Voting System</Typography>
+              <Typography variant="h5">Blockchain Voting</Typography>
             </Grid>
             <Grid item xs={6}>
               <Grid container gap={6} justifyContent="flex-end">

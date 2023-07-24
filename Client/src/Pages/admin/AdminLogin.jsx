@@ -24,7 +24,7 @@ function Copyright(props) {
     >
       {"Copyright © "}
       <Link color="inherit" href="http://localhost:3000">
-        Voting System
+        Blockchain Voting
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
