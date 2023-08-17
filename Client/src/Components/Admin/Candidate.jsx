@@ -63,9 +63,6 @@ const Candidate = (props) => {
           </Typography>
         </CardContent>
         <CardActions>
-          {/* <Button size="small" onClick={() => handleClick(data._id)}>
-            Vote
-          </Button> */}
         </CardActions>
       </Card>
     </>

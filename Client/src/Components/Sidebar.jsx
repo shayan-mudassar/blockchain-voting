@@ -2,7 +2,7 @@ import "../css/SidebarStyle.css";
 import { SidebarData, WebsiteDetails } from "../Data/SidebarData";
 import { Link, Outlet } from "react-router-dom";
 import { useState } from "react";
-
+import HowToVoteIcon from '@mui/icons-material/HowToVote';
 const Sidebar = () => {
   const [data, setData] = useState(SidebarData);
 
@@ -24,7 +24,7 @@ const Sidebar = () => {
         <div className="sidebar">
           <div className="website__details">
             <div className="website__logo">
-              <img src={WebsiteDetails.icon} alt="Website Logo" />
+              <HowToVoteIcon style={{fill:'white', fontSize:'2.5rem'}}/>
             </div>
             <div className="website__title">{WebsiteDetails.title}</div>
           </div>

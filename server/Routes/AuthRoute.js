@@ -7,7 +7,6 @@ import {
   candidates,
   phase,
   votingMail,
-  a,
 } from "../Controller/AuthController.js";
 
 const router = Router();
@@ -35,7 +34,6 @@ router.get("/user/username/:id", users.getUserByName);
 router.get("/user/delete/:id", users.delete);
 router.post("/user/edit/:id", users.edit);
 
-router.post("/op", a.sc);
 router.post("/votingEmail", votingMail.send);
 
 export default router;
